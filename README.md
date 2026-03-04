@@ -29,12 +29,14 @@ Before running this application, ensure you have:
 ## 🔧 Installation
 
 ### 1. Clone or Download the Repository
+
 ```bash
 git clone <repository-url>
 cd Telegram-Exact-Time-Scheduler
 ```
 
 ### 2. Create Virtual Environment (Recommended)
+
 ```bash
 # Windows
 python -m venv venv
@@ -46,11 +48,13 @@ source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 Or manually install required packages:
+
 ```bash
 pip install telethon
 pip install pillow
@@ -61,6 +65,7 @@ pip install pillow
 ## 🚀 Getting Started
 
 ### Step 1: Get Telegram API Credentials
+
 1. Go to [my.telegram.org](https://my.telegram.org)
 2. Log in with your phone number
 3. Go to "API development tools"
@@ -68,11 +73,13 @@ pip install pillow
 5. Copy your **API ID** and **API Hash**
 
 ### Step 2: Run the Application
+
 ```bash
 python telegram_exact_scheduler.py
 ```
 
 ### Step 3: Configure in GUI
+
 1. **Enter API Credentials**
    - API ID: Your Telegram API ID
    - API Hash: Your Telegram API Hash
@@ -111,6 +118,7 @@ Telegram-Exact-Time-Scheduler/
 ## ⚙️ Configuration
 
 ### settings.json
+
 The application automatically creates a `settings.json` file to store your API credentials:
 
 ```json
@@ -137,6 +145,7 @@ The application automatically creates a `settings.json` file to store your API c
 ## 🛠️ Usage Examples
 
 ### Example 1: Send Birthday Message
+
 ```
 Target: @friend_username
 Message: Happy Birthday! 🎉
@@ -144,6 +153,7 @@ Time: 12:00:00.000 AM (midnight)
 ```
 
 ### Example 2: Send Scheduled Reminder
+
 ```
 Target: +8801234567890
 Message: Don't forget about the meeting at 3 PM!
@@ -151,6 +161,7 @@ Time: 02:45:30.500 PM
 ```
 
 ### Example 3: Send Exact Notification
+
 ```
 Target: @notification_channel
 Message: Important update!
@@ -162,18 +173,22 @@ Time: 09:15:00.000 AM (9:15 AM exactly)
 ## 🐛 Troubleshooting
 
 ### Issue: "API ID/Hash not valid"
+
 - Verify credentials from [my.telegram.org](https://my.telegram.org)
 - Ensure API credentials are correctly entered
 
 ### Issue: "User not found"
+
 - Check if username or phone number is correct
 - Use format: `@username` for usernames or `+country_code_number` for phone
 
 ### Issue: "Session expired"
+
 - Delete session file from `session_files/` folder
 - Run application again and re-authenticate
 
 ### Issue: "Message not sending at exact time"
+
 - Ensure your computer clock is synchronized
 - Close other heavy applications consuming CPU
 
@@ -192,11 +207,13 @@ Time: 09:15:00.000 AM (9:15 AM exactly)
 ## 🔄 Updates & Maintenance
 
 ### Update Dependencies
+
 ```bash
 pip install --upgrade telethon
 ```
 
 ### Clear Sessions (If needed)
+
 ```bash
 # Delete session files
 rm -r session_files/
@@ -214,6 +231,7 @@ This project is open-source. Feel free to use and modify for personal use.
 ## 🤝 Contributing
 
 Contributions are welcome! Here are some ideas:
+
 - Add support for scheduled message lists
 - Implement message templates
 - Add message history logging
@@ -225,6 +243,7 @@ Contributions are welcome! Here are some ideas:
 ## 💬 Support
 
 For issues or questions:
+
 1. Check the **Troubleshooting** section above
 2. Verify your Telegram API credentials
 3. Ensure Python and dependencies are correctly installed
@@ -241,4 +260,4 @@ For issues or questions:
 
 **Made with ❤️ for Telegram automation**
 
-*Last Updated: March 2026*
+_Last Updated: March 2026_
