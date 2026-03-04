@@ -1,9 +1,9 @@
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objShell = CreateObject("WScript.Shell")
 
-' স্ক্রিপ্টের ডিরেক্টরি পান
+' Get the script's directory
 scriptPath = objFSO.GetParentFolderName(WScript.ScriptFullName)
 
-' Python স্ক্রিপ্ট চালান (কনসোল উইন্ডো ছাড়াই)
+' Run Python script without console window
 pythonScript = scriptPath & "\telegram_exact_scheduler.py"
 objShell.Run "python """ & pythonScript & """", 0, False
