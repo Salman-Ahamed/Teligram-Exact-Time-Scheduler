@@ -24,6 +24,49 @@ Before running this application, ensure you have:
 - A **Telegram account**
 - API credentials from [my.telegram.org](https://my.telegram.org)
 
+### Python Installation
+
+If you don't have Python installed yet, follow these steps:
+
+#### Windows
+
+1. Visit [python.org](https://www.python.org/downloads/)
+2. Download the latest Python installer (3.9 or newer)
+3. Run the installer
+4. **⚠️ IMPORTANT**: Check the box "Add Python to PATH" during installation
+5. Click "Install Now" and wait for completion
+6. Verify installation by opening Command Prompt and typing:
+   ```bash
+   python --version
+   ```
+
+#### Linux (Ubuntu/Debian)
+
+```bash
+sudo apt update
+sudo apt install python3 python3-pip
+python3 --version
+```
+
+#### Linux (Fedora/CentOS)
+
+```bash
+sudo dnf install python3 python3-pip
+python3 --version
+```
+
+#### macOS
+
+1. Install Homebrew (if not already installed):
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+2. Install Python:
+   ```bash
+   brew install python
+   python3 --version
+   ```
+
 ---
 
 ## 🔧 Installation
@@ -69,16 +112,6 @@ source venv/bin/activate
 
 ### Step 2: Run the Application
 
-**Option 1: Easy Way (Windows)** - Double-click to run
-
-```bash
-run.vbs
-```
-
-Just double-click the `run.vbs` file in the project folder. The application will launch without showing a console window.
-
-**Option 2: Command Line**
-
 ```bash
 python telegram_exact_scheduler.py
 ```
@@ -111,7 +144,6 @@ python telegram_exact_scheduler.py
 ```
 Telegram-Exact-Time-Scheduler/
 ├── telegram_exact_scheduler.py    # Main application
-├── run.vbs                        # Easy launcher (double-click to run)
 ├── settings.json                  # Credentials storage (auto-generated)
 ├── session_files/                 # Telegram session files
 │   └── *.session                  # Session authentication files
