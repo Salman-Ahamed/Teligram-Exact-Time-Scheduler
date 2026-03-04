@@ -69,6 +69,16 @@ source venv/bin/activate
 
 ### Step 2: Run the Application
 
+**Option 1: Easy Way (Windows)** - Double-click to run
+
+```bash
+run.vbs
+```
+
+Just double-click the `run.vbs` file in the project folder. The application will launch without showing a console window.
+
+**Option 2: Command Line**
+
 ```bash
 python telegram_exact_scheduler.py
 ```
@@ -101,6 +111,7 @@ python telegram_exact_scheduler.py
 ```
 Telegram-Exact-Time-Scheduler/
 ├── telegram_exact_scheduler.py    # Main application
+├── run.vbs                        # Easy launcher (double-click to run)
 ├── settings.json                  # Credentials storage (auto-generated)
 ├── session_files/                 # Telegram session files
 │   └── *.session                  # Session authentication files
