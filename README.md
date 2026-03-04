@@ -35,7 +35,15 @@ git clone <repository-url>
 cd Telegram-Exact-Time-Scheduler
 ```
 
-### 2. Create Virtual Environment (Recommended)
+### 2. Install Dependency
+
+```bash
+pip install telethon
+```
+
+That's it! Only `telethon` is required. Tkinter comes built-in with Python.
+
+**Optional: Use Virtual Environment** (if you want to keep your Python environment clean)
 
 ```bash
 # Windows
@@ -45,19 +53,6 @@ venv\Scripts\activate
 # Linux/Mac
 python3 -m venv venv
 source venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Or manually install required packages:
-
-```bash
-pip install telethon
-pip install pillow
 ```
 
 ---
