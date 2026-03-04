@@ -112,30 +112,85 @@ source venv/bin/activate
 
 ### Step 2: Run the Application
 
+**🎯 Easiest Way - Double-Click to Run (Windows)**
+
+Simply double-click the **`run.vbs`** file in the project folder. The application will launch without showing any console window.
+
+**Alternative - Command Line Method**
+
+Open Command Prompt or PowerShell in the project folder and type:
+
 ```bash
 python telegram_exact_scheduler.py
 ```
 
+On Linux/Mac, use:
+
+```bash
+python3 telegram_exact_scheduler.py
+```
+
 ### Step 3: Configure in GUI
 
-1. **Enter API Credentials**
-   - API ID: Your Telegram API ID
-   - API Hash: Your Telegram API Hash
-   - Your Phone: Your Telegram phone number (with country code, e.g., +880...)
+Follow these steps in the application window:
 
-2. **Enter Message Details**
-   - Target: Username (e.g., @username) or phone number of recipient
-   - Message: The text message you want to send
+#### 3.1 Enter API Credentials (Section 1)
 
-3. **Set Exact Send Time**
-   - Hour: 1-12 (use AM/PM selector)
-   - Minute: 0-59
-   - Second: 0-59
-   - Millisecond: 0-999
+1. **API ID** field
+   - Enter the API ID number from [my.telegram.org](https://my.telegram.org)
+   - Example: `1234567`
 
-4. **Click "Login & Start Schedule"**
-   - First time: Complete Telegram login verification
-   - Sessions are saved for future use
+2. **API Hash** field
+   - Enter the API Hash from [my.telegram.org](https://my.telegram.org)
+   - Example: `abcdef1234567890abcdef1234567890`
+
+3. **Your Phone** field
+   - Enter your Telegram phone number with country code
+   - Example: `+8801234567890` (for Bangladesh)
+   - Example: `+12025551234` (for USA)
+
+#### 3.2 Enter Message Details (Section 2)
+
+1. **Target** field - Who to send the message to
+   - For username: `@friend_username` or `@channel_name`
+   - For phone number: `+8801234567890`
+   - Make sure the contact exists in your Telegram
+
+2. **Message** field - What to send
+   - Type your message text
+   - Press `Enter` for multi-line messages
+   - Example: `Hello! This is a scheduled message.`
+
+#### 3.3 Set Exact Send Time (Section 3)
+
+1. **Hour** field
+   - Select 1-12 (use AM/PM selector below)
+   - Example: `3` for 3 o'clock
+
+2. **Minute** field
+   - Select 0-59
+   - Example: `30` for 3:30
+
+3. **Second** field
+   - Select 0-59
+   - Example: `45` for 3:30:45
+
+4. **Millisecond** field
+   - Select 0-999
+   - Example: `500` for 3:30:45.500
+
+5. **AM/PM** selector
+   - Choose AM or PM
+   - Example: `PM` for afternoon/evening
+
+#### 3.4 Start Scheduling
+
+1. Click the **"Login & Start Schedule"** button
+2. **First time only**: You'll receive a verification code on your Telegram phone
+   - Open the popup dialog and enter the code
+   - Session will be saved automatically
+3. After successful login, the application will countdown to the scheduled time
+4. Your message will be sent at the exact time specified!
 
 ---
 
