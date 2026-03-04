@@ -1,0 +1,28 @@
+# Configuration files
+settings.json
+.env
+
+# Telegram session files
+session_files/
+*.session
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
